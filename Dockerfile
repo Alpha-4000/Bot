@@ -1,7 +1,7 @@
-FROM php:8.2-cli
+FROM php:8.2-apache
 
-WORKDIR /app
+WORKDIR /var/www/html
 
-COPY . .
+COPY Obmen.php /var/www/html/Obmen.php
 
-CMD ["php", "Obmen.php"]
+EXPOSE 80
